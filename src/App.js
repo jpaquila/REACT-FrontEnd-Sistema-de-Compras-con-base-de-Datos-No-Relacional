@@ -25,4 +25,4 @@ function App() {
 export default App;
 
 //CONTROL + C (en la terminal, detiene a react)
-//npm start (comienza react)
+//npm start (start react)
