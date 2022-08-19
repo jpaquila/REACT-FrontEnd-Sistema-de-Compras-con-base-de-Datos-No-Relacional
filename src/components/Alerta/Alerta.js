@@ -1,13 +1,16 @@
 import "./Alerta.css";
 
-function Alerta() {
+//props recibe el objeto de las propiedades que enviamos desde la app
+export function Alerta(props) {
+
+
     return (
-        <div className="alerta-contenedor">
-            <p className="alerta-parrafo">
-                Párrafo del componente
+        //etiqueta que me encapsula todo el componente. Opcion a Div.
+        <>
+            <p style={{ color: props.color }}>
+                <h3>{props.titulo}</h3>
             </p>
-        </div>
+        </>
     );
 }
 
-export default Alerta;
