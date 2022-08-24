@@ -3,6 +3,24 @@
   background: white;
 }
 
+.contadores {
+  padding: 10px;
+  display: flex;
+  -ms-flex-item-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: #282c34;
+}
+
+.botonesContadores {
+  color: #26caf7;
+
+  background: #282c34;
+  border-Radius: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
