@@ -35,7 +35,13 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
             <Button onClick={() => onAdd(cantidad)} disabled={stock === 0} variant="outline-info" style={{ marginTop: "30px", background: stock === 0 ? "grey" : "", background: cantidad > 0 ? "blue" : "" }}>Agregar al carrito</Button>{" "}
 
             <h4 style={{ marginTop: "20px" }}>{estadoCarrito}</h4>
+
+            {cantidad >= 1 ? <p>Ya puede agregar productos</p> : <p>Incremente los productos para poder agregar</p>}
+
             {/* <button style={{ marginTop: "20px" }} onClick={stock = 0}>CON ESTE BOTON CAMBIA EL STOCK A 0 Y VERÁ LO QUE SUCEDE</button> */}
+
+
+
         </div >
     )
 
