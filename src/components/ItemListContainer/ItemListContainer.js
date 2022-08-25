@@ -37,10 +37,10 @@ export const ItemListContainer = (props) => {
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>{props.greeting}</Accordion.Header>
-                    <div className='StockClass' style={{ marginTop: "20px" }}>
-                        <button onClick={decrementarStock}>Decrementar Stock</button>
-                        <button onClick={incrementarStock}>Incrementar Stock</button>
-                        <p>{stockEnviar}</p>
+                    <div style={{ marginTop: "20px" }}>
+                        <button className='StockClass' onClick={decrementarStock}>Decrementar Stock</button>
+                        <button className='StockClass' onClick={incrementarStock}>Incrementar Stock</button>
+                        <p style={{ color: "green", fontWeight: "bold" }}>{stockEnviar}</p>
                         <p style={{ color: "green" }}>{stockCero}</p>
                     </div>
                     <Accordion.Body>

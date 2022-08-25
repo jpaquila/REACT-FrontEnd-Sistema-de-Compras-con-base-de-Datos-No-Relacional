@@ -32,14 +32,11 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
             <button className="botonesContadores" onClick={incrementar} disabled={stock === 0} style={{ background: stock === 0 ? "grey" : "" }} > SUMAR</button>
             <h5 style={{ color: "red" }}>{cantidadUno}</h5>
             <h5 style={{ color: "red" }}>{maxStock}</h5>
-            <Button onClick={() => onAdd(cantidad)} disabled={stock === 0} variant="outline-info" style={{ marginTop: "30px", background: stock === 0 ? "grey" : "", background: cantidad > 0 ? "blue" : "" }}>Agregar al carrito</Button>{" "}
+            <Button onClick={() => onAdd(cantidad)} variant={`${cantidad > 0 ? "info" : "light"}`} disabled={stock === 0} style={{ marginTop: "30px", background: stock === 0 ? "grey" : "" }}>Agregar al carrito</Button>{" "}
 
             <h4 style={{ marginTop: "20px" }}>{estadoCarrito}</h4>
 
-            {cantidad >= 1 ? <p>Ya puede agregar productos</p> : <p>Incremente los productos para poder agregar</p>}
-
-            {/* <button style={{ marginTop: "20px" }} onClick={stock = 0}>CON ESTE BOTON CAMBIA EL STOCK A 0 Y VERÁ LO QUE SUCEDE</button> */}
-
+            {cantidad >= 1 ? <p style={{ color: "green" }}>Ya puede agregar productos</p> : <p style={{ color: "red" }}>Incremente los productos para poder agregar</p>}
 
 
         </div >

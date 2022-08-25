@@ -3,6 +3,13 @@
   background: white;
 }
 
+.StockClass {
+  border-radius: 10px;
+  background: none;
+  color: green;
+  border: solid 2px rgb(46, 61, 46);
+}
+
 .contadores {
   padding: 10px;
   display: flex;
