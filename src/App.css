@@ -1,6 +1,50 @@
 .App {
   text-align: center;
   background: white;
+
+}
+
+.listContainer {
+  border-radius: 3%;
+  background: #282c34;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Accordion {
+  background: #282c34;
+}
+
+.cardsContainer {
+  border-radius: 5%;
+  display: inline-flex;
+  flex-flow: nowrap wrap;
+  justify-content: space-around;
+  align-items: space-between;
+  padding: 10px;
+}
+
+.tarjeta {
+  background: #282c34;
+  color: darkgray;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 370px;
+}
+
+.cardImg {
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  background-color: #282c34;
+}
+
+.msgContainer {
+  margin: 10px;
+  background: orange;
 }
 
 .StockClass {

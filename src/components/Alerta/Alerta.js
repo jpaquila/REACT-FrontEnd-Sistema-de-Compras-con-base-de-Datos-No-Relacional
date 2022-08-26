@@ -1,4 +1,4 @@
-import "./Alerta.css";
+
 
 //props recibe el objeto de las propiedades que enviamos desde la app
 export function Alerta(props) {

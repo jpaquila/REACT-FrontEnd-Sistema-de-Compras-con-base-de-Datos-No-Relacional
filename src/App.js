@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
 import { Alerta } from "./components/Alerta/Alerta.js"; //mi componente creado
 import { NavBar } from "./components/NavBar/NavBar.js";
-import { Texto } from "./components/Texto/Texto";
 import Button from "react-bootstrap/Button";
 
 
@@ -12,23 +11,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting="Click aquí para ocultar/desocultar el menú del Carrito"></ItemListContainer>
+      <ItemListContainer className='Accordion' greeting="Click aquí para ocultar/desocultar el menú del Carrito"></ItemListContainer>
       <div>
         <nav className="App-header">
-
           <img src={logo} className="App-logo" alt="logo" />
-
           <Alerta titulo="Proyecto de Muestra" ></Alerta>
           <Alerta titulo="REACT" color="red"></Alerta>
-
-          {/* <Texto mensaje="Componente Children enviado desde el Padre ">
-            <Button>Boton Children</Button>
-          </Texto>
-          <Texto mensaje="Enviando otros elementos children desde el HTML al componente (la siguiente línea y los dos botones).">
-            <p>"Si no se coloca ningún elemento, el children se envía vacío, pero siempre está."</p>
-            <Button style={{ margin: "10px" }}>Aceptar</Button>
-            <Button>Cancelar</Button>
-          </Texto> */}
           <Button variant="outline-info" style={{ marginTop: "30px" }}>CONTINUAR</Button>{" "}
         </nav>
       </div>
