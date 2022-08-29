@@ -9,7 +9,6 @@ export const Item = ({ Naves }) => {
         setLikes(likes + 1);
     }
 
-
     return (
         <div className="tarjeta">
             <img src={Naves.imagen} width="500px" alt="imagen nave" className="cardImg" />

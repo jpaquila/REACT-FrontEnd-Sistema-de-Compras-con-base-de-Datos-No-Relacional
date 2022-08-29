@@ -33,7 +33,7 @@ export const ItemListContainer = (props) => {
     useEffect(() => {
         setTimeout(() => {
             setEstadoCarrito("Esperando productos...")
-        }, 2000)
+        }, 5000)
     }, [])
 
 

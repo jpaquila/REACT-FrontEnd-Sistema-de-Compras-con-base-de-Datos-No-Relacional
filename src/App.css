@@ -23,6 +23,7 @@
   justify-content: space-around;
   align-items: space-between;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .tarjeta {
@@ -49,9 +50,23 @@
 
 .StockClass {
   border-radius: 10px;
-  background: none;
   color: green;
   border: solid 2px rgb(46, 61, 46);
+}
+
+.item-detail {
+  background-color: #282c34;
+  color: white;
+  padding: 50px;
+}
+
+.detail {
+  border: solid 1px white;
+  border-radius: 10px;
+  background: #a8a8a85d;
+  margin: 100px;
+  color: white;
+
 }
 
 .contadores {

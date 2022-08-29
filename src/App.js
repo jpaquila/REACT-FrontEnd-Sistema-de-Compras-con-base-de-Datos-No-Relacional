@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
 import { Alerta } from "./components/Alerta/Alerta.js"; //mi componente creado
 import { NavBar } from "./components/NavBar/NavBar.js";
+import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import Button from "react-bootstrap/Button";
 
 
@@ -11,7 +12,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer className='Accordion' greeting="Click aquí para ocultar/desocultar el menú del Carrito"></ItemListContainer>
+      <ItemListContainer className='Accordion' greeting="Click aquí para ocultar/desocultar el menú de Naves"></ItemListContainer>
+      <ItemDetailContainer />
       <div>
         <nav className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
