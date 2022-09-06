@@ -17,19 +17,16 @@ export const ItemDetail = (props) => {
                     <div className="item-detail">
                         <img src={producto.imagen} width="800px" alt="imagenProducto" />
                         <h2>Nombre: {producto.nombre}</h2>
+                        <h3>Tipo: {producto.tipo}</h3>
                         <h3>Capitán: {producto.capitan}</h3>
                         <h3>Tripulantes: {producto.tripulantes}</h3>
                         <h3>Armamento: {producto.armamento}</h3>
-
-
                         <div className="detail">
                             <h5>Clase: {producto.clase}</h5>
                             <p>Id Producto: {producto.id}</p>
                             <p>{producto.descripcion}</p>
                             <p>Precio: Invaluable</p>
                         </div>
-
-
 
                     </div>
             }

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 export const Item = ({ Naves }) => {
 
@@ -13,11 +14,15 @@ export const Item = ({ Naves }) => {
         <div className="tarjeta">
             <img src={Naves.imagen} width="500px" alt="imagen nave" className="cardImg" />
             <p>Nombre: {Naves.nombre}</p>
+            <p>Tipo: {Naves.tipo}</p>
             <p>Clase: {Naves.clase}</p>
             <p>Tripulantes: {Naves.tripulantes}</p>
             <p>Capitán: {Naves.capitan}</p>
-            <Button variant="info" onClick={incrementarlike} style={{ width: "100px", marginBottom: "20px" }}>Like</Button>
+            <Button class="btn btn-outline-info" onClick={incrementarlike} style={{ width: "80px", marginBottom: "10px" }}>Like</Button>
             <p style={{ color: "white" }}>Likes: {likes}</p>
+
+            <Button variant="info" style={{ width: "120px", marginBottom: "20px" }}><Link to={`/item/${Naves.id}`} style={{ textDecoration: "none", color: "black", }}>Ver más</Link></Button>
+
         </div >
     )
 

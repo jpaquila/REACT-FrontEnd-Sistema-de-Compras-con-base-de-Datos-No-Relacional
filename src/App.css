@@ -12,6 +12,21 @@
   margin: 0 auto;
 }
 
+
+.textoNavbar {
+  color: black;
+  link: black;
+  visited: black;
+  text-decoration: none;
+  font-size: x-large;
+  margin-right: 30px;
+}
+
+/* Link:hover {
+  color: yellow;
+  border-bottom: 2px solid;
+} */
+
 .Accordion {
   background: #282c34;
 }
@@ -19,7 +34,7 @@
 .cardsContainer {
   border-radius: 5%;
   display: inline-flex;
-  flex-flow: nowrap wrap;
+  flex-flow: wrap;
   justify-content: space-around;
   align-items: space-between;
   padding: 10px;
@@ -57,7 +72,7 @@
 .item-detail {
   background-color: #282c34;
   color: white;
-  padding: 50px;
+  padding: 100px;
 }
 
 .detail {

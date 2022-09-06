@@ -18,11 +18,11 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
     }
 
     const decrementar = () => {
-        if (cantidad > 0) {
+        if (cantidad > 1) {
             setCantidad(cantidad - 1)
             setMaxStock("");
         } else {
-            setCantidadUno("¡La cantidad ya es cero!")
+            setCantidadUno("¡La cantidad no puede ser menor a 1!")
         }
     }
     return (
@@ -32,7 +32,7 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
             <button className="botonesContadores" onClick={incrementar} disabled={stock === 0} style={{ background: stock === 0 ? "grey" : "" }} > SUMAR</button>
             <h5 style={{ color: "red" }}>{cantidadUno}</h5>
             <h5 style={{ color: "red" }}>{maxStock}</h5>
-            <Button onClick={() => onAdd(cantidad)} variant={`${cantidad > 0 ? "info" : "light"}`} disabled={stock === 0} style={{ marginTop: "30px", background: stock === 0 ? "grey" : "" }}>Agregar al carrito</Button>{" "}
+            <Button onClick={() => onAdd(cantidad)} variant={`${cantidad > 1 ? "info" : "light"}`} disabled={stock === 0} style={{ marginTop: "30px", background: stock === 0 ? "grey" : "" }}>Agregar al carrito</Button>{" "}
 
             <h4 style={{ marginTop: "20px", color: "white" }}>{estadoCarrito}</h4>
 
