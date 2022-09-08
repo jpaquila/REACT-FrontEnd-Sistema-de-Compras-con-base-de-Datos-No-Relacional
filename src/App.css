@@ -4,6 +4,7 @@
 
 }
 
+
 .listContainer {
   border-radius: 3%;
   background: #282c34;
@@ -22,10 +23,27 @@
   margin-right: 30px;
 }
 
+.textoBotonCarrito {
+  color: white;
+  link: black;
+  text-align: center;
+  visited: black;
+  text-decoration: none;
+  font-size: x-large;
+}
+
 /* Link:hover {
   color: yellow;
   border-bottom: 2px solid;
 } */
+
+.ItemDetailContainer {
+  margin-top: 65px;
+  background-color: #282c34;
+  color: white;
+}
+
+
 
 .Accordion {
   background: #282c34;

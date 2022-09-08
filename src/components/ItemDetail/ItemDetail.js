@@ -1,9 +1,22 @@
 import Spinner from 'react-bootstrap/Spinner';
+import { ItemCount } from "../ItemCount/ItemCount"
+import { useState, useEffect } from 'react';
 
 
 export const ItemDetail = (props) => {
     const { producto, loading } = props
+    const [estadoCarrito, setEstadoCarrito] = useState("Carrito Vacío");
 
+    const onAdd = (cantidad) => { //recibe cantidad de la funcion hijo itemcount
+        setEstadoCarrito(`El carrito tiene ${cantidad} producto/s. Recibido de un evento del ItemCount`);
+    }
+
+    //use effect para el cartel
+    useEffect(() => {
+        setTimeout(() => {
+            setEstadoCarrito("Esperando productos...")
+        }, 5000)
+    }, [])
 
     return (
         <div className="item-container">
@@ -27,6 +40,8 @@ export const ItemDetail = (props) => {
                             <p>{producto.descripcion}</p>
                             <p>Precio: Invaluable</p>
                         </div>
+
+                        <ItemCount className='Accordion' stock={10} initial={1} onAdd={onAdd} estadoCarrito={estadoCarrito} />
 
                     </div>
             }

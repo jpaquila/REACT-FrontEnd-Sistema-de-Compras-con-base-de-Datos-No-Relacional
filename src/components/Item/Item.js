@@ -18,7 +18,8 @@ export const Item = ({ Naves }) => {
             <p>Clase: {Naves.clase}</p>
             <p>Tripulantes: {Naves.tripulantes}</p>
             <p>Capitán: {Naves.capitan}</p>
-            <Button class="btn btn-outline-info" onClick={incrementarlike} style={{ width: "80px", marginBottom: "10px" }}>Like</Button>
+
+            <Button variant="outline-info" onClick={incrementarlike} style={{ width: "80px", marginBottom: "10px" }}>Like</Button>
             <p style={{ color: "white" }}>Likes: {likes}</p>
 
             <Button variant="info" style={{ width: "120px", marginBottom: "20px" }}><Link to={`/item/${Naves.id}`} style={{ textDecoration: "none", color: "black", }}>Ver más</Link></Button>
