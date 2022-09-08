@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+  background: white;
+
+}
+
+
+.listContainer {
+  border-radius: 3%;
+  background: #282c34;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.textoNavbar {
+  color: black;
+  link: black;
+  visited: black;
+  text-decoration: none;
+  font-size: x-large;
+  margin-right: 30px;
+}
+
+.textoBotonCarrito {
+  color: white;
+  link: black;
+  text-align: center;
+  visited: black;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+/* Link:hover {
+  color: yellow;
+  border-bottom: 2px solid;
+} */
+
+.ItemDetailContainer {
+  margin-top: 65px;
+  background-color: #282c34;
+  color: white;
+}
+
+
+
+.Accordion {
+  background: #282c34;
+}
+
+.cardsContainer {
+  border-radius: 5%;
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: space-between;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background: #282c34;
+  color: darkgray;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 370px;
+}
+
+.cardImg {
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  background-color: #282c34;
+}
+
+.msgContainer {
+  margin: 10px;
+  background: orange;
+}
+
+.StockClass {
+  border-radius: 10px;
+  color: green;
+  border: solid 2px rgb(46, 61, 46);
+}
+
+.item-detail {
+  background-color: #282c34;
+  color: white;
+  padding: 100px;
+}
+
+.detail {
+  border: solid 1px white;
+  border-radius: 10px;
+  background: #a8a8a85d;
+  margin: 100px;
+  color: white;
+
+}
+
+.contadores {
+  padding: 10px;
+  display: flex;
+  -ms-flex-item-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: #282c34;
+}
+
+.botonesContadores {
+  color: #26caf7;
+
+  background: #282c34;
+  border-Radius: 10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
