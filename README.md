@@ -5,16 +5,15 @@
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono2.png)
 
 # Cambios en versiones:
-v 0.01: Creación de Readme
-v 0.02: Incorporación Menu E-Commerce
-v 0.03: Creación de Landing Page y Cart Widget
-v 0.04: Incorporación de contador y Carrito de Compras.
-v 0.05: Agregado Control de Stock. Correcciones de Carrito.
-v 0.06: Implementación de Promesas y Resolución de las mismas.
-v 0.07: Incorporación de Detalle del Producto. 
-v 0.08: Primer Proyecto Final - Integración de Linkeos y filtros de productos. Separación de Lista de ítems y Detalle individual de un ítem a elección.
-v 0.09: Integración del contador de carrito a un producto específico, el cual envía el dato de productos a comprar al Landing del Carrito.
-        Ordenamiento del código y exclusión de html del main App.
+### v 0.01: Creación de Readme
+### v 0.02: Incorporación Menu E-Commerce
+### v 0.03: Creación de Landing Page y Cart Widget
+### v 0.04: Incorporación de contador y Carrito de Compras.
+### v 0.05: Agregado Control de Stock. Correcciones de Carrito.
+### v 0.06: Implementación de Promesas y Resolución de las mismas.
+### v 0.07: Incorporación de Detalle del Producto. 
+### v 0.08: Primer Proyecto Final - Integración de Linkeos y filtros de productos. Separación de Lista de ítems y Detalle individual de un ítem a elección.
+### v 0.09: Integración del contador de carrito a un producto específico, el cual envía el dato de productos a comprar al Landing del Carrito. Ordenamiento del código y exclusión de html del main App.
 
 
 # Dependencias Usadas:
