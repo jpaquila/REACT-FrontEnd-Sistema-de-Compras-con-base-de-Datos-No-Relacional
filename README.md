@@ -1,11 +1,11 @@
-###Desarrollador: Juan Pablo Aquila
-####Proyecto React: Sistema de Compras integrado.
+### Desarrollador: Juan Pablo Aquila
+### Proyecto React: Sistema de Compras integrado.
 
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono2.png)
 
 
-###Dependencias Usadas:
+### Dependencias Usadas:
 
 ### `npm install react-bootstrap@next bootstrap@5.1.1`
 
@@ -112,4 +112,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+<<<<<<< HEAD
         
+=======
+        
+>>>>>>> f02b9309c2483d7b09f9aa68a05a6ea2351b4c92
