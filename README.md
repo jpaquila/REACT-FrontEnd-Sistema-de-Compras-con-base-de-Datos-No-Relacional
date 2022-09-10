@@ -36,7 +36,7 @@ Permite estilar la web con el lenguaje de hojas de estilo Sass
 Permite usar íconos solo importándolos
 
   
-
+![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono4.png)
 
 
 
@@ -114,3 +114,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono1.png)
+
+![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono5.png)
