@@ -2,6 +2,8 @@ import { Item } from "../Item/Item"
 
 export const ItemList = ({ ships }) => {
 
+
+
     return (
         <div className="cardsContainer">
             {

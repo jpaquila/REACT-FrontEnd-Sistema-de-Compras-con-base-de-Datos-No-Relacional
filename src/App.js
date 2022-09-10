@@ -9,24 +9,27 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
 import { PaginaContacto } from "./components/Temas/PaginaContacto";
 import { CartWidget } from "./components/CartWidget/CartWidget"
 import { Logo } from "./components/Logo/Logo";
+import { CartContex } from "./context/CartContext";
 
 function App() {
   return (
     <div className="App" >
       <BrowserRouter >
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="*" element={<ItemListContainer />} />
-          <Route path="/naves/:tipoNave" element={<ItemListContainer />} />
-          <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path="/contacto" element={<PaginaContacto />} />
-          <Route path="/cart" element={<CartWidget />} />
-        </Routes>
+        <CartContex.Provider value={{ texto: " hola", productos: [1, 2, 3] }}>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="*" element={<ItemListContainer />} />
+            <Route path="/naves/:tipoNave" element={<ItemListContainer />} />
+            <Route path="/item/:id" element={<ItemDetailContainer />} />
+            <Route path="/contacto" element={<PaginaContacto />} />
+            <Route path="/cart" element={<CartWidget />} />
+          </Routes>
 
-        {/* <DataBaseStarWars /> */}
+          {/* <DataBaseStarWars /> */}
+          <Logo />
 
-        <Logo />
+        </CartContex.Provider>
       </BrowserRouter >
     </div >
 
