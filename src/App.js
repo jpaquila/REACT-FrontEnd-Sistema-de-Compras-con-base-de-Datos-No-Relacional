@@ -10,6 +10,8 @@ import { PaginaContacto } from "./components/Temas/PaginaContacto";
 import { CartWidget } from "./components/CartWidget/CartWidget"
 import { Logo } from "./components/Logo/Logo";
 import { CartContex } from "./context/CartContext";
+//IMPORTACION DE CONTEXTO
+
 
 function App() {
   return (
