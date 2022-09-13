@@ -1,17 +1,20 @@
 import Spinner from 'react-bootstrap/Spinner';
 import { ItemCount } from "../ItemCount/ItemCount"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { CartContex } from "../../context/CartContext"
 
 
-export const ItemDetail = (props) => {
-    const { producto, loading } = props
+export const ItemDetail = ({ item, loading }) => {
+
     const [estadoCarrito, setEstadoCarrito] = useState("Carrito Vacío");
 
-    const onAdd = (cantidad) => { //recibe cantidad de la funcion hijo itemcount
-        setEstadoCarrito(`El carrito tiene ${cantidad} producto/s. Recibido de un evento del ItemCount`);
+    const { addProduct } = useContext(CartContex); //usamos le contexto de cartContext para usar la funcion de agregar
+
+    const onAdd = (cantidad) => {
+        setEstadoCarrito(`Agregó ${cantidad} producto/s al carrito`);
+        addProduct({ ...item, cantidad })
     }
 
-    //use effect para el cartel
     useEffect(() => {
         setTimeout(() => {
             setEstadoCarrito("Esperando productos...")
@@ -28,17 +31,17 @@ export const ItemDetail = (props) => {
                     :
 
                     <div className="item-detail">
-                        <img src={producto.imagen} width="800px" alt="imagenProducto" />
-                        <h2>Nombre: {producto.nombre}</h2>
-                        <h3>Tipo: {producto.tipo}</h3>
-                        <h3>Capitán: {producto.capitan}</h3>
-                        <h3>Tripulantes: {producto.tripulantes}</h3>
-                        <h3>Armamento: {producto.armamento}</h3>
+                        <img src={item.imagen} width="800px" alt="imagenProducto" />
+                        <h2>Nombre: {item.nombre}</h2>
+                        <h3>Tipo: {item.tipo}</h3>
+                        <h3>Capitán: {item.capitan}</h3>
+                        <h3>Tripulantes: {item.tripulantes}</h3>
+                        <h3>Armamento: {item.armamento}</h3>
                         <div className="detail">
-                            <h5>Clase: {producto.clase}</h5>
-                            <p>Id Producto: {producto.id}</p>
-                            <p>{producto.descripcion}</p>
-                            <p>Precio: Invaluable</p>
+                            <h5>Clase: {item.clase}</h5>
+                            <p>Id Producto: {item.id}</p>
+                            <p>{item.descripcion}</p><br></br>
+                            <h5>Precio: Si bien una nave así es invaluable, para el caso práctico será de ${item.precio}</h5>
                         </div>
 
                         <ItemCount className='Accordion' stock={10} initial={1} onAdd={onAdd} estadoCarrito={estadoCarrito} />

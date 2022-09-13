@@ -1,8 +1,8 @@
 
 import { useState } from "react"
 import Button from "react-bootstrap/Button";
-import { CartWidget } from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom"
+
 
 export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
     const [cantidad, setCantidad] = useState(initial)
@@ -16,7 +16,6 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
         } else {
             setMaxStock(`¡Alcanzó el máximo stock disponible! Stock: ${cantidad}`)
         }
-
     }
 
     const decrementar = () => {
@@ -30,8 +29,8 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
     return (
         <div class="contadores">
             <h1 style={{ color: "white" }} >{cantidad}</h1>
-            <button className="botonesContadores" onClick={decrementar} disabled={stock === 0} style={{ background: stock === 0 ? "grey" : "" }} > RESTAR</button>
-            <button className="botonesContadores" onClick={incrementar} disabled={stock === 0} style={{ background: stock === 0 ? "grey" : "" }} > SUMAR</button>
+            <button className="botonesContadores" onClick={decrementar} disabled={stock === 0} style={{ background: stock === 0 ? "grey" : "" }} > -</button>
+            <button className="botonesContadores" onClick={incrementar} disabled={stock === 0} style={{ background: stock === 0 ? "grey" : "" }} > +</button>
             <h5 style={{ color: "red" }}>{cantidadUno}</h5>
             <h5 style={{ color: "red" }}>{maxStock}</h5>
             <Button onClick={() => (onAdd(cantidad))} variant={`${cantidad > 1 ? "info" : "outline-info"}`} disabled={stock === 0} style={{ marginTop: "30px", background: stock === 0 ? "grey" : "" }}>Agregar al carrito</Button>{" "}
@@ -39,7 +38,7 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
             <h4 style={{ marginTop: "20px", color: "white" }}>{estadoCarrito}</h4>
 
             {cantidad >= 1 ? <p style={{ color: "green" }}>Ya puede agregar productos</p> : <p style={{ color: "red" }}>Incremente los productos para poder agregar</p>}
-            <Button variant="outline-info" onClick={<CartWidget cantidad={cantidad} />}><Link to="/cart" className="textoBotonCarrito"> -> CARRITO</Link> </Button>
+            <Link to="/cart" className="textoBotonCarrito"> <Button variant="outline-info" >  CARRITO </Button></Link>
 
         </div >
     )

@@ -14,6 +14,7 @@
 ### v 0.07: Incorporación de Detalle del Producto. 
 ### v 0.08: Primer Proyecto Final - Integración de Linkeos y filtros de productos. Separación de Lista de ítems y Detalle individual de un ítem a elección.
 ### v 0.09: Integración del contador de carrito a un producto específico, el cual envía el dato de productos a comprar al Landing del Carrito. Ordenamiento del código y exclusión de html del main App.
+### v 0.10: Carrito de compra funcional. 
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 
@@ -114,5 +115,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono1.png)
-
-![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono5.png)
