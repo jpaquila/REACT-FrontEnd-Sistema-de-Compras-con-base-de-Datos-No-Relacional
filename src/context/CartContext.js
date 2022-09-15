@@ -19,6 +19,20 @@ export const CartProvider = ({ children }) => { //recibo cualquier componente qu
         }
     }
 
+    const more = (id) => {
+        const newList = [...productCartList]
+        const productoIndex = productCartList.findIndex(element => element.id === id)
+        newList[productoIndex].cantidad = newList[productoIndex].cantidad + 1
+        setProductCartList(newList)
+    }
+
+    const less = (id) => {
+        const newList = [...productCartList]
+        const productoIndex = productCartList.findIndex(element => element.id === id)
+        newList[productoIndex].cantidad = newList[productoIndex].cantidad - 1
+        setProductCartList(newList)
+    }
+
     const removeProduct = (idProduct) => {
         const copyArray = [...productCartList]
         const newArray = copyArray.filter(elm => elm.id !== idProduct)
@@ -44,7 +58,7 @@ export const CartProvider = ({ children }) => { //recibo cualquier componente qu
 
 
     return (
-        <CartContex.Provider value={{ productCartList, addProduct, removeProduct, getTotalProducts, removeAllItems, isInCar }}>
+        <CartContex.Provider value={{ productCartList, addProduct, removeProduct, getTotalProducts, removeAllItems, isInCar, more, less }}>
             {children}
         </CartContex.Provider>
     )

@@ -32,6 +32,5 @@ export const ItemListContainer = (props) => {
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
-
     )
 }

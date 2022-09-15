@@ -49,6 +49,7 @@ export const ItemDetail = ({ item, loading }) => {
                         </div>
 
                         <ItemCount className='Accordion' stock={10} initial={1} onAdd={onAdd} estadoCarrito={estadoCarrito} />
+
                         {
                             cant > 0 &&
                             <>
@@ -57,7 +58,6 @@ export const ItemDetail = ({ item, loading }) => {
                         }
 
                         <Link to="/"><Button variant="info" style={{ marginTop: "30px" }} >Volver a la lista de Naves</Button></Link>
-
 
                     </div>
 

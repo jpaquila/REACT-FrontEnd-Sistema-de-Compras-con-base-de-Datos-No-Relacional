@@ -1,0 +1,22 @@
+.contactoTitular {
+    margin: 100px;
+    color: white;
+    background: black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contacto {
+    margin: 100px;
+
+}
+
+.contacto a {
+    text-decoration: none;
+    link: rgb(2, 2, 143);
+    visited: rgb(2, 2, 143);
+}
+
+button {
+    margin-top: 50px;
+}

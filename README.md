@@ -16,6 +16,7 @@
 ### v 0.09: Integración del contador de carrito a un producto específico, el cual envía el dato de productos a comprar al Landing del Carrito. Ordenamiento del código y exclusión de html del main App.
 ### v 0.10: Carrito de compra funcional. 
 ### v 0.11: Funciones dinámicas de Rendering agregadas. Automatización de componentes. Contexto dinámico. 
+### v 0.12: Corrección de Bugs varios. 
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 

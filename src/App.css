@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   background: white;
-
 }
 
 
@@ -38,12 +37,10 @@
 } */
 
 .ItemDetailContainer {
-  margin-top: 65px;
+
   background-color: #282c34;
   color: white;
 }
-
-
 
 .Accordion {
   background: #282c34;
@@ -97,13 +94,14 @@
   border: solid 1px white;
   border-radius: 10px;
   background: #a8a8a85d;
-  margin: 100px;
+  margin: 68px;
   color: white;
 
 }
 
 .contadores {
   padding: 10px;
+  margin: -50px;
   display: flex;
   -ms-flex-item-align: center;
   flex-direction: column;
