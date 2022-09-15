@@ -1,7 +1,6 @@
 
 import { useState } from "react"
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom"
 
 
 export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
@@ -38,7 +37,7 @@ export const ItemCount = ({ stock, initial, onAdd, estadoCarrito }) => {
             <h4 style={{ marginTop: "20px", color: "white" }}>{estadoCarrito}</h4>
 
             {cantidad >= 1 ? <p style={{ color: "green" }}>Ya puede agregar productos</p> : <p style={{ color: "red" }}>Incremente los productos para poder agregar</p>}
-            <Link to="/cart" className="textoBotonCarrito"> <Button variant="outline-info" >  CARRITO </Button></Link>
+
 
         </div >
     )

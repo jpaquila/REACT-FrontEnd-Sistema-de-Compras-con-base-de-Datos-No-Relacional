@@ -15,6 +15,7 @@
 ### v 0.08: Primer Proyecto Final - Integración de Linkeos y filtros de productos. Separación de Lista de ítems y Detalle individual de un ítem a elección.
 ### v 0.09: Integración del contador de carrito a un producto específico, el cual envía el dato de productos a comprar al Landing del Carrito. Ordenamiento del código y exclusión de html del main App.
 ### v 0.10: Carrito de compra funcional. 
+### v 0.11: Funciones dinámicas de Rendering agregadas. Automatización de componentes. Contexto dinámico. 
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 

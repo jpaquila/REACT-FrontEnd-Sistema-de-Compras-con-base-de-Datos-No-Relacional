@@ -2,17 +2,21 @@ import Spinner from 'react-bootstrap/Spinner';
 import { ItemCount } from "../ItemCount/ItemCount"
 import { useState, useEffect, useContext } from 'react';
 import { CartContex } from "../../context/CartContext"
+import { Link } from "react-router-dom"
+import Button from "react-bootstrap/Button";
 
 
 export const ItemDetail = ({ item, loading }) => {
 
     const [estadoCarrito, setEstadoCarrito] = useState("Carrito Vacío");
+    const [cant, setCant] = useState(0);
 
     const { addProduct } = useContext(CartContex); //usamos le contexto de cartContext para usar la funcion de agregar
 
     const onAdd = (cantidad) => {
         setEstadoCarrito(`Agregó ${cantidad} producto/s al carrito`);
         addProduct({ ...item, cantidad })
+        setCant(cantidad)
     }
 
     useEffect(() => {
@@ -45,8 +49,18 @@ export const ItemDetail = ({ item, loading }) => {
                         </div>
 
                         <ItemCount className='Accordion' stock={10} initial={1} onAdd={onAdd} estadoCarrito={estadoCarrito} />
+                        {
+                            cant > 0 &&
+                            <>
+                                <Link to="/cart" className="textoBotonCarrito"> <Button variant="outline-info" >  IR AL CARRITO </Button></Link><br></br>
+                            </>
+                        }
+
+                        <Link to="/"><Button variant="info" style={{ marginTop: "30px" }} >Volver a la lista de Naves</Button></Link>
+
 
                     </div>
+
             }
         </div >
     )

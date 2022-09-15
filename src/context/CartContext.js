@@ -17,8 +17,6 @@ export const CartProvider = ({ children }) => { //recibo cualquier componente qu
             const list = [...productCartList, item]
             setProductCartList(list)
         }
-
-
     }
 
     const removeProduct = (idProduct) => {
