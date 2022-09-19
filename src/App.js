@@ -10,6 +10,7 @@ import { PaginaContacto } from "./components/Temas/PaginaContacto";
 import { Logo } from "./components/Logo/Logo";
 import { CartProvider } from "./context/CartContext";
 import { CartContainer } from "./components/CartContainer/CartContainer";
+import { PaginaFirebase } from "./components/Temas/PaginaFirebase";
 //IMPORTACION DE CONTEXTO
 
 
@@ -23,9 +24,10 @@ function App() {
             <Route path="/" element={<ItemListContainer />} />
             <Route path="*" element={<ItemListContainer />} />
             <Route path="/naves/:tipoNave" element={<ItemListContainer />} />
-            <Route path="/item/:id" element={<ItemDetailContainer />} />
+            <Route path="/item/:productId" element={<ItemDetailContainer />} />
             <Route path="/contacto" element={<PaginaContacto />} />
             <Route path="/cart" element={<CartContainer />} />
+            <Route path="/firebase" element={PaginaFirebase}></Route>
           </Routes>
 
           {/* <DataBaseStarWars /> */}

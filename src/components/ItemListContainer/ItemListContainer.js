@@ -4,6 +4,10 @@ import { ItemList } from '../ItemList/ItemList';
 import obtenerNaves from "../DataBase/DataBase";
 import { useParams } from 'react-router-dom';
 
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "../../utils/firebase"
+
+
 export const ItemListContainer = (props) => {
 
 
@@ -12,15 +16,47 @@ export const ItemListContainer = (props) => {
     const [ships, setShips] = useState([]);
 
 
+    // RESOLVIENDO LLAMADO A BASE DE DATOS FIREBASE CON ASYNC/AWAIT
+
     useEffect(() => {
-        obtenerNaves.then(resultado => {
-            tipoNave
-                ?
-                setShips(resultado.filter(i => i.tipo === tipoNave))  //filtramos por variable tipoNave
-                :
-                setShips(resultado)
-        })
-    }, [tipoNave])
+        const getData = async () => {
+            try {
+                let queryRef = tipoNave ? query(collection(db, "items"), where("tipo", "==", tipoNave)) //filtramos por variable tipoNave (CATEGORIA)
+                    :
+                    collection(db, "items") //si no hay filtro, que queryRef guarde todos los items (naves)
+
+
+
+                const response = await getDocs(queryRef) //get Docs me retorna una promesa, y le mandamos el resultado de la query
+                const datos = response.docs.map(doc => { //array datos que contendrá todos los newDoc (naves) 
+                    const newDoc = {
+                        ...doc.data(),
+                        id: doc.id //como el id viene por separado de los demas datos (data), los agrego por el spread operator, llamados new Doc, que se guardan en el array datos
+                    }
+                    return newDoc
+                })
+                setShips(datos) //finalmente incluimos el array de naves (datos) en la variable de estado Ships
+
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        getData()
+    }, [tipoNave]) //se renderizará cada vez que haya un cambio en esta variable
+
+
+
+    //RESOLVIENDO CON BASE DE DATOS LOCAL CON THEN
+
+    // useEffect(() => {
+    //     obtenerNaves.then(resultado => {
+    //         tipoNave
+    //             ?
+    //             setShips(resultado.filter(item => item.tipo === tipoNave))  //filtramos por variable tipoNave (CATEGORIA)
+    //             :
+    //             setShips(resultado)
+    //     })
+    // }, [tipoNave])
 
 
     return (

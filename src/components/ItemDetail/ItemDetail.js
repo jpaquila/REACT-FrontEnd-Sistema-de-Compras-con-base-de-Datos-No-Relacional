@@ -6,10 +6,11 @@ import { Link } from "react-router-dom"
 import Button from "react-bootstrap/Button";
 
 
-export const ItemDetail = ({ item, loading }) => {
+export const ItemDetail = ({ item }) => {
 
     const [estadoCarrito, setEstadoCarrito] = useState("Carrito Vacío");
     const [cant, setCant] = useState(0);
+    const [loading, setLoading] = useState(true)
 
     const { addProduct } = useContext(CartContex); //usamos le contexto de cartContext para usar la funcion de agregar
 
@@ -25,13 +26,19 @@ export const ItemDetail = ({ item, loading }) => {
         }, 5000)
     }, [])
 
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 1000)
+    }, [])
+
     return (
         <div className="item-container">
             {
 
-                loading ? <h2>Cargando...<br></br>
+                loading ? <div style={{ marginTop: "80px" }}><h2>Cargando...<br></br>
                     <Spinner animation="border" role="status">
-                        <span className="visually-hidden">Loading...</span></Spinner></h2>
+                        <span className="visually-hidden">Loading...</span></Spinner></h2> </div>
                     :
 
                     <div className="item-detail">

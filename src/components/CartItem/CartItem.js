@@ -17,7 +17,7 @@ export const CartItem = ({ item }) => {
                 <p>precio unitario: ${item.precio}</p>
                 <p>cantidad: {item.cantidad}</p>
                 <h5>Precio total: ${item.precio * item.cantidad} </h5><br></br>
-                <Button variant="info" onClick={() => less(item.id)} disabled={item.cantidad === 0} >-</Button>
+                <Button variant="info" onClick={() => less(item.id)} disabled={item.cantidad === 1} >-</Button>
                 <Button variant="outline-info" onClick={() => removeProduct(item.id)}>Eliminar Nave</Button>
                 <Button variant="info" onClick={() => more(item.id)}>+</Button>
 

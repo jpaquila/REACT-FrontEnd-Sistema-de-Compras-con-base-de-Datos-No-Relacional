@@ -17,6 +17,7 @@
 ### v 0.10: Carrito de compra funcional. 
 ### v 0.11: Funciones dinámicas de Rendering agregadas. Automatización de componentes. Contexto dinámico. 
 ### v 0.12: Corrección de Bugs varios. 
+### v 0.13: Incorporación de Firebase y vinculación al proyecto existente. Correccione de Bugs varias. 
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 

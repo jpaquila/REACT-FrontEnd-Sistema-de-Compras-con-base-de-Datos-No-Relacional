@@ -1,26 +1,30 @@
 import React from 'react'
-import obtenerNaves from '../DataBase/DataBase';
 import { useState, useEffect } from 'react';
 import { ItemDetail } from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import { doc, getDoc } from "firebase/firestore"
+import { db } from '../../utils/firebase';
 
 
 export const ItemDetailContainer = () => {
     const [item, setItem] = useState();
-    const [loading, setLoading] = useState(true)
-    const { id } = useParams();
+    const { productId } = useParams();
 
-    useEffect(() => { //en este caso, la promesa la resolvemos buscando por id para traer un solo elemento
-        obtenerNaves.then(respuesta => {
-            setItem(respuesta.find(i => i.id === Number(id)))
-            setLoading(false) //pantalla de carga
-        })
-    }, [id])
+    useEffect(() => {
+        const queryRef = doc(db, "items", productId)
+        getDoc(queryRef).then(response => {
+            const newDoc = {
+                ...response.data(),
+                id: response.id
+            }
+            setItem(newDoc)
+        }).catch(error => console.log("ERROR: " + error))
+    }, [productId])
 
 
     return (
         <div className='ItemDetailContainer'>
-            <ItemDetail item={item} loading={loading} />
+            <ItemDetail item={item} />
         </div>
     )
 }
