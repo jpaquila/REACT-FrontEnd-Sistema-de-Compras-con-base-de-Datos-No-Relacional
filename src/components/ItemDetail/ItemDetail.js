@@ -20,12 +20,14 @@ export const ItemDetail = ({ item }) => {
         setCant(cantidad)
     }
 
+    //Mensaje: Esperando productos
     useEffect(() => {
         setTimeout(() => {
             setEstadoCarrito("Esperando productos...")
         }, 5000)
     }, [])
 
+    //Mensaje: Loading
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
@@ -44,13 +46,12 @@ export const ItemDetail = ({ item }) => {
                     <div className="item-detail">
                         <img src={item.imagen} width="800px" alt="imagenProducto" />
                         <h2>Nombre: {item.nombre}</h2>
-                        <h3>Tipo: {item.tipo}</h3>
-                        <h3>Capitán: {item.capitan}</h3>
-                        <h3>Tripulantes: {item.tripulantes}</h3>
-                        <h3>Armamento: {item.armamento}</h3>
+                        <h4>Tipo: {item.tipo}</h4>
+                        <h4>Capitán: {item.capitan}</h4>
+                        <h4>Tripulantes: {item.tripulantes}</h4>
+                        <h4>Armamento: {item.armamento}</h4>
                         <div className="detail">
                             <h5>Clase: {item.clase}</h5>
-                            <p>Id Producto: {item.id}</p>
                             <p>{item.descripcion}</p><br></br>
                             <h5>Precio: Si bien una nave así es invaluable, para el caso práctico será de ${item.precio}</h5>
                         </div>
@@ -60,7 +61,7 @@ export const ItemDetail = ({ item }) => {
                         {
                             cant > 0 &&
                             <>
-                                <Link to="/cart" className="textoBotonCarrito"> <Button variant="outline-info" >  IR AL CARRITO </Button></Link><br></br>
+                                <Link to="/cart" className="textoBotonCarrito"> <Button variant="outline-info" style={{ marginTop: "40px" }}>  IR AL CARRITO </Button></Link><br></br>
                             </>
                         }
 

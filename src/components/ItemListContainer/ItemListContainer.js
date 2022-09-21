@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import { ItemList } from '../ItemList/ItemList';
-import obtenerNaves from "../DataBase/DataBase";
 import { useParams } from 'react-router-dom';
 
-import { collection, getDocs, query, where } from "firebase/firestore"
+import { collection, getDocs, query, where, limit } from "firebase/firestore"
 import { db } from "../../utils/firebase"
 
 
@@ -21,11 +20,11 @@ export const ItemListContainer = (props) => {
     useEffect(() => {
         const getData = async () => {
             try {
-                let queryRef = tipoNave ? query(collection(db, "items"), where("tipo", "==", tipoNave)) //filtramos por variable tipoNave (CATEGORIA)
+                let queryRef = tipoNave ? query(collection(db, "items"), //filtramos por variable tipoNave (CATEGORIA)
+                    where("tipo", "==", tipoNave),
+                    limit(8))
                     :
                     collection(db, "items") //si no hay filtro, que queryRef guarde todos los items (naves)
-
-
 
                 const response = await getDocs(queryRef) //get Docs me retorna una promesa, y le mandamos el resultado de la query
                 const datos = response.docs.map(doc => { //array datos que contendrá todos los newDoc (naves) 

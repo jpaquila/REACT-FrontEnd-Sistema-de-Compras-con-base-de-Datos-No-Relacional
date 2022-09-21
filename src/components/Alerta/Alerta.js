@@ -8,7 +8,7 @@ export function Alerta(props) {
         // <> </> etiqueta que me encapsula todo el componente. Opcion a Div.
         <>
             <p style={{ color: color }}>
-                <h3>{titulo}</h3>
+                <h4>{titulo}</h4>
             </p>
         </>
     );

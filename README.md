@@ -4,7 +4,7 @@
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono2.png)
 
-# Cambios en versiones:
+### **Cambios en versiones:**
 ### v 0.01: Creación de Readme
 ### v 0.02: Incorporación Menu E-Commerce
 ### v 0.03: Creación de Landing Page y Cart Widget
@@ -18,6 +18,8 @@
 ### v 0.11: Funciones dinámicas de Rendering agregadas. Automatización de componentes. Contexto dinámico. 
 ### v 0.12: Corrección de Bugs varios. 
 ### v 0.13: Incorporación de Firebase y vinculación al proyecto existente. Correccione de Bugs varias. 
+### v 0.14: Integración de formulario de Compras mediante incorporación de órdenes en base de datos.
+
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 

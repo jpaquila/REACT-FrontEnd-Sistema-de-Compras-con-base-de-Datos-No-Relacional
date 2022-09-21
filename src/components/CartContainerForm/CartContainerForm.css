@@ -1,0 +1,19 @@
+form {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 60px;
+}
+
+.check {
+    align-items: center;
+}
+
+h3 {
+    color: green;
+    margin-top: 20px;
+}

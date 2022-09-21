@@ -16,7 +16,7 @@ export const PaginaContacto = () => {
             <div className="contacto">
                 <h3>¿Tiene potencial lo que está apreciando?</h3>
                 <h5>Dale un vistazo a mi perfil <a href="https://www.linkedin.com/in/jpaquila/" target="_blank" rel="noopener noreferrer"> -> Visitar mi Linkedin</a>.</h5>
-                <Link to="/" ><Button variant="outline-info" >Volver al Home</Button></Link>
+                <Link to="/" ><Button className="button" variant="outline-info" >Volver al Home</Button></Link>
             </div>
         </>
 
