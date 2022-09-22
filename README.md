@@ -1,10 +1,11 @@
 # Desarrollador: Juan Pablo Aquila
-# Proyecto React: Sistema de Compras integrado.
+## Proyecto React: Sistema de Compras integrado.
 
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono2.png)
 
-### **Cambios en versiones:**
+## **Cambios en versiones:**
+
 ### v 0.01: Creación de Readme
 ### v 0.02: Incorporación Menu E-Commerce
 ### v 0.03: Creación de Landing Page y Cart Widget
@@ -23,7 +24,7 @@
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 
-# Dependencias Usadas:
+## **Dependencias Usadas:**
 
 ### `npm install react-bootstrap@next bootstrap@5.1.1`
 

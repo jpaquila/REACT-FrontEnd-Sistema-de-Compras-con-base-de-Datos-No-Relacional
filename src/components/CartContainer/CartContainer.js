@@ -11,8 +11,6 @@ export const CartContainer = () => {
     const carritoVacio = productCartList.length === 0 && "Carrito vacio"
 
 
-
-
     return (
         <div className="item-detail">
             <h1 style={{ paddingBottom: "40px", fontSize: "30px" }}>CARRITO DE COMPRA</h1>

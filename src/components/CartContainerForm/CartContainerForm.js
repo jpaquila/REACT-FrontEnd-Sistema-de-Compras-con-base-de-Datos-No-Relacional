@@ -52,7 +52,7 @@ export const CartContainerForm = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="telefono">
                 <Form.Label>Teléfono</Form.Label>
-                <Form.Control type="text" required placeholder="Ingresa tu Teléfono" />
+                <Form.Control type="number" required placeholder="Ingresa tu Teléfono" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="email">
                 <Form.Label>Email</Form.Label>
