@@ -153,3 +153,9 @@
     transform: rotate(360deg);
   }
 }
+
+h4 a {
+  text-decoration: none;
+  link: rgb(2, 2, 143);
+  visited: rgb(2, 2, 143);
+}
