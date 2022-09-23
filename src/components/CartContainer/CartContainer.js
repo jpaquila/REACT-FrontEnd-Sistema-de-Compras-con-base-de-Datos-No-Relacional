@@ -17,12 +17,11 @@ export const CartContainer = () => {
             {
                 productCartList.map(item => (<CartItem key={item.id} item={item} />))
             }
-
-            <Button onClick={removeAllItems} variant="danger" style={{ marginTop: "50px", fontSize: "20px" }} disabled={carritoVacio}>Vaciar Carrito</Button>
-
             <h3 style={{ marginTop: "140px" }}>{carritoVacio}</h3>
-            <h4 style={{ marginTop: "140px" }}>Precio total: ${getTotalPrice()}</h4>
-
+            {getTotalPrice() !== 0 &&
+                <h4 style={{ marginTop: "140px" }}>Precio total: ${getTotalPrice()}</h4>
+            }
+            <Button onClick={removeAllItems} variant="danger" style={{ marginTop: "50px", fontSize: "20px" }} disabled={carritoVacio}>Vaciar Carrito</Button>
             <CartContainerForm />
 
             <Link to="/" ><Button variant="info" style={{ marginTop: "140px" }} >Volver a la lista de Naves</Button></Link>

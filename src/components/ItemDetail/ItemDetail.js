@@ -38,7 +38,7 @@ export const ItemDetail = ({ item }) => {
         <div className="item-container">
             {
 
-                loading ? <div style={{ marginTop: "80px" }}><h2>Cargando...<br></br>
+                loading ? <div style={{ marginTop: "75px" }}><h2>Cargando...<br></br>
                     <Spinner animation="border" role="status">
                         <span className="visually-hidden">Loading...</span></Spinner></h2> </div>
                     :

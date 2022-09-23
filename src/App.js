@@ -12,6 +12,7 @@ import { CartProvider } from "./context/CartContext";
 import { CartContainer } from "./components/CartContainer/CartContainer";
 
 function App() {
+
   return (
     <div className="App" >
       <CartProvider>
@@ -36,8 +37,3 @@ function App() {
 }
 
 export default App;
-
-//CONTROL + C (en la terminal, detiene a react)
-//npm start (start react)
-//BootStrap: https://react-bootstrap.netlify.app/getting-started/introduction/
-//CONTORL + ]  = comenta

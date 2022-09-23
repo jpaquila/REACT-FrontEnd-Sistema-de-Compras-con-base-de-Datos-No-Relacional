@@ -12,7 +12,7 @@ export const CartContainerForm = () => {
 
     const { productCartList, getTotalPrice, removeAllItems } = useContext(CartContex)
     const [check, setCheck] = useState(false)
-    const [mensajeId, setMensajeId] = useState()
+    const [mensajeId, setMensajeId] = useState(null)
 
     const sendOrder = (e) => {
         e.preventDefault()
@@ -73,7 +73,7 @@ export const CartContainerForm = () => {
                     </Button>
                 </form >
             }
-            {
+            {mensajeId !== null &&
                 alert(mensajeId)
             }
         </div>

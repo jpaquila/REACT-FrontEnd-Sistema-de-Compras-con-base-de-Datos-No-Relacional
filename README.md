@@ -1,8 +1,9 @@
 # Desarrollador: Juan Pablo Aquila
 ## Proyecto React: Sistema de Compras integrado.
 
-
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono2.png)
+
+## Linkedin: https://www.linkedin.com/in/jpaquila/
 
 ## **Cambios en versiones:**
 
