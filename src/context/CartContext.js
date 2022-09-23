@@ -13,10 +13,10 @@ export const CartProvider = ({ children }) => { //recibo cualquier componente qu
         if (isInCar(item.id)) {
             const productoIndex = productCartList.findIndex(element => element.id === item.id)
             newList[productoIndex].cantidad = newList[productoIndex].cantidad + item.cantidad
-            newList[productoIndex].totalPrice = newList[productoIndex].cantidad * newList[productoIndex].precio
+            newList[productoIndex].precioProductos = newList[productoIndex].cantidad * newList[productoIndex].precio
             setProductCartList(newList)
         } else {
-            const newProduct = { ...item, totalPrice: item.cantidad * item.precio }
+            const newProduct = { ...item, precioProductos: item.cantidad * item.precio }
             const list = [...productCartList, newProduct]
             setProductCartList(list)
         }
@@ -26,6 +26,7 @@ export const CartProvider = ({ children }) => { //recibo cualquier componente qu
         const newList = [...productCartList]
         const productoIndex = productCartList.findIndex(element => element.id === id)
         newList[productoIndex].cantidad = newList[productoIndex].cantidad + 1
+        newList[productoIndex].precioProductos = newList[productoIndex].cantidad * newList[productoIndex].precio;
         getTotalPrice()
         setProductCartList(newList)
     }
@@ -34,6 +35,7 @@ export const CartProvider = ({ children }) => { //recibo cualquier componente qu
         const newList = [...productCartList]
         const productoIndex = productCartList.findIndex(element => element.id === id)
         newList[productoIndex].cantidad = newList[productoIndex].cantidad - 1
+        newList[productoIndex].precioProductos = newList[productoIndex].cantidad * newList[productoIndex].precio
         getTotalPrice()
         setProductCartList(newList)
     }
@@ -50,7 +52,7 @@ export const CartProvider = ({ children }) => { //recibo cualquier componente qu
     }
 
     const getTotalPrice = () => {
-        setTotalPriceProducts(productCartList.reduce((acc, item) => acc + item.totalPrice, 0)) //reduce: itera en cada uno de los elementos y toma una propiedad de esos elementos y la acumula 
+        setTotalPriceProducts(productCartList.reduce((acc, item) => acc + item.precioProductos, 0)) //reduce: itera en cada uno de los elementos y toma una propiedad de esos elementos y la acumula 
         return totalPriceProducts
     }
 

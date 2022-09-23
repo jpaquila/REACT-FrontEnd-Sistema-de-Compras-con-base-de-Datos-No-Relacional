@@ -20,7 +20,7 @@
 ### v 0.12: Corrección de Bugs varios. 
 ### v 0.13: Incorporación de Firebase y vinculación al proyecto existente. Correccione de Bugs varias. 
 ### v 0.14: Integración de formulario de Compras mediante incorporación de órdenes en base de datos.
-
+### v 0.15: Correcciones de errores varias. Funcionamiento completo OK. Página web finalizada y funcional. Se esperan detalle de optimizaciones futuras.
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 

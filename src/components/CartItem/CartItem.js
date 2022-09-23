@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 
 
 export const CartItem = ({ item }) => {
+
     const { removeProduct, more, less } = useContext(CartContex);
 
 
@@ -16,7 +17,7 @@ export const CartItem = ({ item }) => {
                 <h3>{item.nombre}</h3>
                 <p>precio unitario: ${item.precio}</p>
                 <p>cantidad: {item.cantidad}</p>
-                <h5>Precio total naves {item.nombre}: ${+ item.precio * item.cantidad} </h5><br></br>
+                <h5>Precio total naves {item.nombre}: ${item.precioProductos} </h5><br></br>
                 <Button variant="info" onClick={() => less(item.id)} disabled={item.cantidad === 1} >-</Button>
                 <Button variant="outline-info" onClick={() => removeProduct(item.id)}>Eliminar Nave</Button>
                 <Button variant="info" onClick={() => more(item.id)}>+</Button>
