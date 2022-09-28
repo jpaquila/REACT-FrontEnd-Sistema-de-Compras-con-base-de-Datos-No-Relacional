@@ -26,6 +26,7 @@ ___
 ### v 0.14: Integración de formulario de Compras mediante incorporación de órdenes en base de datos.
 ### v 0.15: Correcciones de errores varias. Funcionamiento completo OK. Página web finalizada y funcional. Se esperan detalle de optimizaciones futuras.
 ### v 0.16: Incorporación de sweetalert2. Corrección y optimización de estilos CSS en dinstintos archivos. Implementación de límite de stock cuando se agregaban productos desde el carrito con el signo "+".
+### v 1.00: Proyecto terminado y funcional
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 
