@@ -12,6 +12,10 @@
   margin: 0 auto;
 }
 
+.itemListContainer {
+  margin-top: 70px;
+  background-color: #282d34;
+}
 
 .textoNavbar {
   color: black;
@@ -20,58 +24,6 @@
   text-decoration: none;
   font-size: x-large;
   margin-right: 30px;
-}
-
-.textoBotonCarrito {
-  color: white;
-  link: black;
-  text-align: center;
-  visited: black;
-  text-decoration: none;
-  font-size: x-large;
-}
-
-/* Link:hover {
-  color: yellow;
-  border-bottom: 2px solid;
-} */
-
-.ItemDetailContainer {
-
-  background-color: #282c34;
-  color: white;
-}
-
-.Accordion {
-  background: #282c34;
-}
-
-.cardsContainer {
-  border-radius: 5%;
-  display: inline-flex;
-  flex-flow: wrap;
-  justify-content: space-around;
-  align-items: space-between;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.tarjeta {
-  background: #282c34;
-  color: darkgray;
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  margin: 20px;
-
-  border-radius: 10px;
-  width: 370px;
-}
-
-.cardImg {
-  width: 350px;
-  margin-bottom: 20px;
-  border-radius: 5%;
-  background-color: #282c34;
 }
 
 .msgContainer {
@@ -83,39 +35,6 @@
   border-radius: 10px;
   color: green;
   border: solid 2px rgb(46, 61, 46);
-}
-
-.item-detail {
-  background-color: #282c34;
-  color: white;
-  padding: 100px;
-}
-
-.detail {
-  border: solid 1px white;
-  border-radius: 10px;
-  background: #a8a8a85d;
-  margin: 68px;
-  color: white;
-
-}
-
-.contadores {
-  padding: 10px;
-  margin: -50px;
-  display: flex;
-  -ms-flex-item-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1vmin);
-  color: #282c34;
-}
-
-.botonesContadores {
-  color: #26caf7;
-  background: #282c34;
-  border-Radius: 10px;
 }
 
 .App-logo {

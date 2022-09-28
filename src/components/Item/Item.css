@@ -1,0 +1,90 @@
+.item-detail {
+    background-color: #282c34;
+    color: white;
+    padding: 100px;
+}
+
+.loading {
+    margin-top: 75px;
+}
+
+.item-detail Button {
+    margin-top: 30px;
+}
+
+
+.detail {
+    border: solid 1px white;
+    border-radius: 10px;
+    background: #a8a8a85d;
+    margin: 68px;
+    color: white;
+}
+
+.textoBotonCarrito {
+    color: white;
+    link: black;
+    text-align: center;
+    visited: black;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+
+.contadores {
+    padding: 10px;
+    margin: -50px;
+    display: flex;
+    -ms-flex-item-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    color: #282c34;
+}
+
+.contadores h1 {
+    color: white;
+}
+
+.contadores h4 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contadores h5 {
+    color: red;
+    margin-top: 5px;
+}
+
+
+.botonesContadores {
+    color: #26caf7;
+    background: #282c34;
+    border-Radius: 10px;
+}
+
+.photoCard {
+    width: 300px;
+}
+
+.buttonLike {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.pWhites {
+    color: white;
+}
+
+.buttonVerMas {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+
+.ItemDetailContainer {
+    background-color: #282c34;
+    color: white;
+}

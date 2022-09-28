@@ -8,8 +8,8 @@ import Button from "react-bootstrap/Button";
 
 export const ItemDetail = ({ item }) => {
 
-    const [estadoCarrito, setEstadoCarrito] = useState("Carrito Vacío");
-    const [cant, setCant] = useState(0);
+    const [estadoCarrito, setEstadoCarrito] = useState("Carrito Vacío")
+    const [cant, setCant] = useState(0)
     const [loading, setLoading] = useState(true)
 
     const { addProduct } = useContext(CartContex); //usamos le contexto de cartContext para usar la funcion de agregar
@@ -17,7 +17,7 @@ export const ItemDetail = ({ item }) => {
     const onAdd = (cantidad) => {
         setEstadoCarrito(`Agregó ${cantidad} producto/s al carrito`);
         addProduct({ ...item, cantidad })
-        setCant(cantidad)
+        setCant(cant + cantidad)
     }
 
     //Mensaje: Esperando productos
@@ -35,14 +35,12 @@ export const ItemDetail = ({ item }) => {
     }, [])
 
     return (
-        <div className="item-container">
+        <div>
             {
-
-                loading ? <div style={{ marginTop: "75px" }}><h2>Cargando...<br></br>
+                loading ? <div className='loading'><h2>Cargando...<br></br>
                     <Spinner animation="border" role="status">
                         <span className="visually-hidden">Loading...</span></Spinner></h2> </div>
                     :
-
                     <div className="item-detail">
                         <img src={item.imagen} width="800px" alt="imagenProducto" />
                         <h2>Nombre: {item.nombre}</h2>
@@ -56,16 +54,16 @@ export const ItemDetail = ({ item }) => {
                             <h5>Precio: Si bien una nave así es invaluable, para el caso práctico será de ${item.precio}</h5>
                         </div>
 
-                        <ItemCount className='Accordion' stock={10} initial={1} onAdd={onAdd} estadoCarrito={estadoCarrito} />
+                        <ItemCount stock={10} cant={cant} onAdd={onAdd} estadoCarrito={estadoCarrito} />
 
                         {
                             cant > 0 &&
                             <>
-                                <Link to="/cart" className="textoBotonCarrito"> <Button variant="outline-info" style={{ marginTop: "40px" }}>  IR AL CARRITO </Button></Link><br></br>
+                                <Link to="/cart"> <Button variant="outline-info">  IR AL CARRITO </Button></Link><br></br>
                             </>
                         }
 
-                        <Link to="/"><Button variant="info" style={{ marginTop: "30px" }} >Volver a la lista de Naves</Button></Link>
+                        <Link to="/"><Button variant="info">Volver a la lista de Naves</Button></Link>
 
                     </div>
 
