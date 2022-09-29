@@ -38,6 +38,16 @@ export const ItemListContainer = (props) => {
     }, [tipoNave])
 
 
+    function compare_name(a, b) {
+        if (a.nombre.toLowerCase() < b.nombre.toLowerCase()) {
+            return -1;
+        }
+        if (a.nombre.toLowerCase() > b.nombre.toLowerCase()) {
+            return 1;
+        }
+        return 0;
+    }
+
     //OPCION PARA USAR BASE DE DATOS LOCAL (DESCOMENTAR) LO SIGUIENTE Y COMENTAR LO ANTERIOR
 
     // useEffect(() => {
@@ -52,7 +62,7 @@ export const ItemListContainer = (props) => {
 
     return (
         <div className='itemListContainer'>
-            <ItemList ships={ships} />
+            <ItemList ships={ships.sort(compare_name)} />
         </div>
 
 
