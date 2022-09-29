@@ -1,6 +1,6 @@
 # **Desarrollador:** Juan Pablo Aquila
 ___
-#PROYECTO HOSTEADO EN EL SIGUIENTE LINK: **https://my-app-react-startrek.herokuapp.com/**
+#PROYECTO HOSTEADO EN EL SIGUIENTE LINK: ** **
 ___
 
 ## Proyecto de React integrado utilizando base de datos Firebase.
