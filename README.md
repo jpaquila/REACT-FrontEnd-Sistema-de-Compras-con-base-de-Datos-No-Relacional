@@ -1,4 +1,8 @@
 # **Desarrollador:** Juan Pablo Aquila
+___
+#PROYECTO HOSTEADO EN EL SIGUIENTE LINK: **https://my-app-react-startrek.herokuapp.com/**
+___
+
 ## Proyecto de React integrado utilizando base de datos Firebase.
 **Tema: Compra de productos con temática Star Trek**.
 ## Mi Linkedin -> https://www.linkedin.com/in/jpaquila/
@@ -30,7 +34,8 @@ ___
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono3.png)
 
-# Visual Studio Code
+
+# INSTALACION DESDE VISUAL STUDIO CODE
 ## **Dependencias Utilizadas:**
 ### `npm install react-router-dom`
 
