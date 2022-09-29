@@ -1,6 +1,6 @@
 # **Desarrollador:** Juan Pablo Aquila
 ## Proyecto de React integrado utilizando base de datos Firebase.
-**Compra de productos con temática Star Trek**.
+**Tema: Compra de productos con temática Star Trek**.
 ## Mi Linkedin -> https://www.linkedin.com/in/jpaquila/
 ___
 
@@ -55,6 +55,10 @@ Permite usar íconos solo importándolos
 ### `npm install sweetalert2`
 
 Permite que la alerta de compra exitosa sea hermosa
+
+### `npm start`
+
+Inicia el proyecto
 
   
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono4.png)
