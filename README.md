@@ -1,6 +1,6 @@
 # **Desarrollador:** Juan Pablo Aquila
 ___
-#PROYECTO HOSTEADO EN EL SIGUIENTE LINK: ** **
+#PROYECTO HOSTEADO EN EL SIGUIENTE LINK: **https://react-aquila.web.app/**
 ___
 
 ## Proyecto de React integrado utilizando base de datos Firebase.
