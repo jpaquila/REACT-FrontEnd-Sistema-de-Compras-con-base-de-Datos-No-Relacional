@@ -1,6 +1,6 @@
 # **Desarrollador:** Juan Pablo Aquila
 ___
-## PROYECTO HOSTEADO EN EL SIGUIENTE LINK: **https://react-aquila.web.app/**
+## PROYECTO HOSTEADO EN EL SIGUIENTE LINK (ver solo desde PC): **https://react-aquila.web.app/**
 ## Video Demo: **https://youtu.be/jTMmRik04fk**
 ___
 
