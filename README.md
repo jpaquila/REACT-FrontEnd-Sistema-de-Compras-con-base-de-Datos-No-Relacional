@@ -78,3 +78,10 @@ Para aprender React, chequee [React documentation](https://reactjs.org/).
 
 
 ![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/icono1.png)
+
+## Capturas De Pantalla
+
+![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/react(1).png)
+![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/react(2).png)
+![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/react(3).png)
+![image](https://github.com/jpaquila/jpaquila-react-libreria-aquila/blob/master/src/Assets/react(4).png)
